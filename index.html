@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#282828" />
+		<meta property="og:description" content="Laman ini adalah laman profil Try Fathur Rachman">
+		<meta property="og:url" content="https://tryfatur.github.io">
+		<meta property="og:title" content="Profil: Try Fathur Rachman">
+		<title>Profil: Try Fathur Rachman</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<style type="text/css">
+			@import 'https://fonts.googleapis.com/css?family=Jaldi';
+
+			body {
+				background-color: #282828;
+				margin-top: 70px;
+				color: #fff;
+				font-family: 'Jaldi', serif;
+				padding-bottom: 30px;
+			}
+
+			.avatar {
+				border-radius: 100px;
+			}
+
+			a {
+				color: #ffffff;
+			}
+
+			a:hover, a:visited {
+				text-decoration: none;
+				color: #ffffff;
+			}
+
+			.col-md-6 > a > i {
+				padding: 5px;
+			}
+
+			.col-md-6 > a:hover > .fa-facebook,
+			.col-md-6 > a:hover > .fa-linkedin,
+			.col-md-6 > a:hover > .fa-github,
+			.col-md-6 > a:hover > .fa-instagram,
+			.col-md-6 > a:hover > .fa-wordpress,
+			.col-md-6 > a:hover > .fa-phone {
+				border-radius: 2px;
+			}
+
+			.col-md-6 > a:hover > .fa-facebook {
+				background-color: #3B5998;
+			}
+
+			.col-md-6 > a:hover > .fa-linkedin {
+				background-color: #0077B5;
+			}
+
+			.col-md-6 > a:hover > .fa-github {
+				background-color: #fff;
+				color: #323131;
+			}
+
+			.col-md-6 > a:hover > .fa-instagram {
+				background-color: #B43BAD;
+			}
+
+			.col-md-6 > a:hover > .fa-wordpress {
+				background-color: #00A0D2;
+			}
+
+			.col-md-6 > a:hover > .fa-phone {
+				background-color: #C51407;
+			}
+
+			.span-h3 {
+				font-size: 25px;
+			}
+
+			.modal-body {
+				color: #000;
+			}
+
+			.btn, .modal-content {
+				border-radius: 0px;
+			}
+
+			.typed-cursor{
+				opacity: 1;
+				-webkit-animation: blink 0.7s infinite;
+				-moz-animation: blink 0.7s infinite;
+				animation: blink 0.7s infinite;
+			}
+			@keyframes blink{
+				0% { opacity:1; }
+				50% { opacity:0; }
+				100% { opacity:1; }
+			}
+			@-webkit-keyframes blink{
+				0% { opacity:1; }
+				50% { opacity:0; }
+				100% { opacity:1; }
+			}
+			@-moz-keyframes blink{
+				0% { opacity:1; }
+				50% { opacity:0; }
+				100% { opacity:1; }
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="text-center">
+			<img src="http://1.gravatar.com/avatar/943c9d07c3955b51d2060e3d88bf16ce?size=200" alt="" class="avatar">
+			<h1>Hai !</h1>
+
+			<span class="span-h3">
+				Saya <span class="span-h3" id="typed-place"></span>
+			</span>
+
+			<div id="typed-strings">
+				<p>seorang <em>Backend Developer.</em></p>
+				<p>seorang <em>Data Enthusiast.</em></p>
+				<p>seorang <em>Open Government Researcher.</em></p>
+				<p>Try Fathur Rachman.</p>
+			</div>
+
+			<span id="typed"></span>
+			
+			<hr style="width: 85px;" />
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<a href="https://facebook.com/tryfatur" target="_blank">
+							<i class="fa fa-fw fa-facebook fa-2x"></i>
+						</a>
+						<a href="https://id.linkedin.com/in/tryfatur" target="_blank">
+							<i class="fa fa-fw fa-linkedin fa-2x"></i>
+						</a>
+						<a href="https://github.com/tryfatur" target="_blank">
+							<i class="fa fa-fw fa-github fa-2x"></i>
+						</a>
+						<a href="https://instagram.com/tryfatur" target="_blank">
+							<i class="fa fa-fw fa-instagram fa-2x"></i>
+						</a>
+						<a href="https://tryfatur.wordpress.com" target="_blank">
+							<i class="fa fa-fw fa-wordpress fa-2x"></i>
+						</a>
+						<a data-toggle="modal" href='#contact'>
+							<i class="fa fa-fw fa-phone fa-2x"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="contact">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body text-center">
+						<h3>Jadi, Anda tertarik dengan profil saya?</h3>
+						<h4>Cukup email saya di tryfatur[at]gmail[dot]com</h4>
+						<button type="button" class="btn btn-danger" data-dismiss="modal">
+							<i class="fa fa-fw fa-times-circle fa-1x"></i> Tutup
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+		<script>
+			$(function(){
+				$("#typed-place").typed({
+					stringsElement: $('#typed-strings'),
+					typeSpeed: 75,
+					cursorChar: "_"
+				});
+			});
+		</script>
+	</body>
+</html>
