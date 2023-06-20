@@ -48,7 +48,7 @@
 
 /* ===================================
     Scrollbar
-====================================== */
+====================================== 
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -67,41 +67,28 @@
     cursor: pointer;
 }
 
-/* ===================================
+ ===================================
     Image Hover
 ====================================== */
 
-.hover-effect::before,
-.hover-effect::after {
+.hover-effect {
     content: "";
-    background: #fff;
-    height: 0;
-    width: 0;
-    z-index: 1;
-    position: absolute;
-    -o-transition-duration: 1s;
-    -webkit-transition-duration: 1s !important;
-    transition-duration: 1s !important;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    border:0 solid #FBB120;
 }
-.hover-effect::before {
-    right: 0;
-    opacity: 1;
-    bottom: 0;
 
-}
-.hover-effect::after {
-    top: 0;
-    opacity: .7;
-    left: 0;
-}
-.hover-effect:hover::after, .hover-effect:hover::before {
-    height: 100%;
-    opacity: 0;
-    width: 100%;
+.blog .row:hover .hover-effect,.standalone-row:hover .hover-effect,.hover-effect:hover {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    border: 3px solid #FBB120;
 }
 /* Use in BLog */
 .image {
     overflow: hidden;
+    border-radius: 10px;
 }
 a.image{
     display: block;
@@ -110,10 +97,11 @@ a.image{
     width: 100%;
     height: 100%;
     display: block;
+    
 }
 .image, .image img {
     position: relative;
-}
+}*/
 /* Use in BLog */
 .image {
     overflow: hidden;
@@ -1825,6 +1813,7 @@ figure.about-image.hover .curl {
     height: 450px;
     width: 100%;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .bg-img-map{
@@ -2226,7 +2215,6 @@ figure.about-image.hover .curl {
 }
 
 .page-title{
-    background:url("../img/standalone.jpg");
     position:relative;
     text-align:center;
     padding: 200px 0 150px 0;
