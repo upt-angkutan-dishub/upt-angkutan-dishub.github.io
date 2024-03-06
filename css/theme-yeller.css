@@ -263,9 +263,9 @@ body {
 }
 .pos-vertical-center {
   position: relative;
-  top: 75%;
-  transform: translateY(-75%);
-  -webkit-transform: translateY(-75%);
+  top: 80%;
+  transform: translateY(-80%);
+  -webkit-transform: translateY(-80%);
 }
 @media all and (max-width: 767px) {
   .pos-vertical-center {
