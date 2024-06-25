@@ -198,9 +198,7 @@ $('.testimonial #testimonial-carousal').owlCarousel({
 /* ===================================
     Write Years
 ====================================== */
-const d = new Date();
-let year = d.getFullYear();
-document.getElementsByClassName("year").innerHTML = year;
+
 
 if ($(window).width() > 992) {
     $(".parallax").parallaxie({
