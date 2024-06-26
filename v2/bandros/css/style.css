@@ -29,7 +29,7 @@ h6 {
 	border-radius:50px!important;
 }
 
-.link:hover {
+.link:hover ,.link:active {
   -webkit-transform: scale(1.02);
   transform: scale(1.02);
   transition: 0.3s;
