@@ -3,10 +3,11 @@
 
 /******************ERROR PAGE 3******************/
 .bg-error-img{
-    background: #232b43 url("https://uptangkutan-bandung.id/img/bg.jpg");
-    height: 100vw;
+    background: url("https://uptangkutan-bandung.id/img/bg.jpg");
+    height: 100vh;
     background-position: center;
     background-size: cover;
+    background-color: #232b43;
 }
 .text-alignment{
     height: 100vh;
